@@ -19,14 +19,14 @@ Un site web personnel présentant mon curriculum vitae de manière interactive e
 
 ## 🌐 Accéder au site
 
-Le site est accessible à l'adresse: https://hb008.github.io/index_fr.html 
+Le site est accessible à l'adresse: https://hb-devstudio.github.io/
 
 ## 📦 Installation locale
 
 Si tu souhaites exécuter ce projet localement:
 
 1. Clone le dépôt:
-   git clone https://github.com/hb008/hb008.github.io
+   git clone https://hb-devstudio.github.io/
    
 ## 📜 License  
 Ce projet est sous licence [MIT](LICENSE).  
