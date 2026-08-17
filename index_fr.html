@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0c1e3a">
+    <meta name="description"
+        content="CV de Brini Hamdi — Ingénieur Systèmes Senior, spécialiste Ariane 6 et infrastructures critiques.">
     <title>CV Brini Hamdi - Ingénieur Systèmes Senior (Ariane 6)</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -12,234 +15,339 @@
 </head>
 
 <body>
-    <div class="lang-selector">
-        <a href="index_fr.html">FR</a> | <a href="index_en.html">EN</a>
-    </div>
-
-    <div class="download-section">
-        <h3 style="border-bottom: none;">Télécharger ce CV</h3>
-        <div class="download-buttons">
-            <a href="cv_brini_hamdi.pdf" class="download-button" download>
-                <span>📄 Format PDF</span>
-            </a>
-            <a href="cv_brini_hamdi.docx" class="download-button" download>
-                <span>📝 Format Word</span>
-            </a>
-        </div>
-    </div>
-
-    <header>
-        <div class="header-content">
-            <div class="name-title">
-                <h1>BRINI HAMDI</h1>
-                <h2>INGÉNIEUR SYSTÈMES SENIOR | ARIANE 6 & INFRASTRUCTURES CRITIQUES</h2>
-                <p>Spécialiste en infrastructures critiques et sécurisation des environnements middleware</p>
-                <div class="tjm-info">TJM : 620€ | Disponible pour missions en portage salarial ou freelance</div>
-            </div>
-            <div class="contact-info">
-                <p>&#x1F4F1; 0758131640</p>
-                <p>&#x1F4E7; brini.hamdi@gmail.com</p>
-                <p>&#x1F4CD; Paris</p>
-                <p><a href="https://www.linkedin.com/in/brini-hamdi-251a0486/" target="_blank"><i class="fab fa-linkedin"></i>
-                        LinkedIn</a></p>
+    <nav class="top-nav">
+        <div class="nav-inner">
+            <div class="nav-brand">HB<span>.</span></div>
+            <div class="nav-actions">
+                <div class="lang-selector">
+                    <a href="index_fr.html" class="lang-link active">FR</a>
+                    <a href="index_en.html" class="lang-link">EN</a>
+                </div>
+                <a href="cv_brini_hamdi.pdf" class="nav-cta" download>
+                    <i class="fas fa-download"></i>
+                    <span>Télécharger</span>
+                </a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section class="profile">
-            <p>Ingénieur systèmes senior avec 12 ans d'expérience dans des environnements critiques, intervenant
-                aujourd'hui sur les systèmes sol du lanceur européen Ariane 6 en support direct des campagnes de
-                lancement. Expertise en intégration système, maintenance applicative, automatisation et sécurisation
-                d'infrastructures Linux, Windows et cloud privé.</p>
-        </section>
-
-        <section>
-            <h3>EXPERTISE TECHNIQUE</h3>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h4>Middleware & Serveurs d'Applications</h4>
-                    <ul>
-                        <li>Déploiement et configuration avancée : Tomcat, Apache, PHP-FPM, WebSphere, Nginx, WebLogic
-                        </li>
-                        <li>Messagerie & Streaming : RabbitMQ, Kafka</li>
-                        <li>Authentification & IAM : Keycloak, LDAP, Active Directory, CAS</li>
-                    </ul>
+    <div class="page-wrapper">
+        <header class="hero">
+            <div class="header-content">
+                <div class="name-title">
+                    <h1>BRINI HAMDI</h1>
+                    <h2>INGÉNIEUR SYSTÈMES SENIOR | ARIANE 6 & INFRASTRUCTURES CRITIQUES</h2>
+                    <p>Spécialiste en infrastructures critiques, intégration système et sécurisation des environnements
+                        middleware</p>
+                    <div class="hero-badges">
+                        <span class="badge"><i class="fas fa-rocket"></i> Ariane 6</span>
+                        <span class="badge"><i class="fas fa-server"></i> 12 ans d'expérience</span>
+                        <span class="badge"><i class="fas fa-shield-alt"></i> Environnements critiques</span>
+                    </div>
+                    <div class="tjm-info">
+                        <i class="fas fa-briefcase"></i>
+                        TJM : 620€ — Disponible en portage salarial ou freelance
+                    </div>
                 </div>
-
-                <div class="skill-category">
-                    <h4>Cloud & Conteneurisation</h4>
-                    <ul>
-                        <li>Orchestration : Docker, Kubernetes</li>
-                        <li>Virtualisation : OpenStack, VMware, VSphere</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>DevOps & Automatisation</h4>
-                    <ul>
-                        <li>CI/CD : Ansible, Git, Rundeck</li>
-                        <li>Scripting : Python, Bash, PowerShell</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Monitoring & Observabilité</h4>
-                    <ul>
-                        <li>Stack ELK : Elasticsearch, Logstash, Kibana, Curator, Metricbeat, Filebeat, Heartbeat</li>
-                        <li>Supervision : Zabbix, Grafana</li>
-                        <li>Ordonnancement : VTOM, Cron</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Sécurité & Infrastructure</h4>
-                    <ul>
-                        <li>Sécurisation des flux : SSL/TLS, gestion des certificats</li>
-                        <li>Pare-feu : Firewalld, IPtables</li>
-                        <li>Haute disponibilité : Heartbeat, Pacemaker, Load balancing (Nginx, HAProxy)</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Développement</h4>
-                    <ul>
-                        <li>Langages : Java (SE, J2EE), Python, C#, Ruby</li>
-                        <li>Systèmes embarqués : Microchip, Freescale, OS Yocto</li>
-                    </ul>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 0758131640</p>
+                    <p><i class="fas fa-envelope"></i> brini.hamdi@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Poissy, France</p>
+                    <p><a href="https://www.linkedin.com/in/brini-hamdi-251a0486/" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <div class="divider"></div>
+        <main>
+            <section class="profile">
+                <p>Ingénieur systèmes senior avec 12 ans d'expérience dans des environnements critiques, intervenant
+                    aujourd'hui sur les systèmes sol du lanceur européen Ariane 6 en support direct des campagnes de
+                    lancement. Expertise en intégration système, maintenance applicative, automatisation et sécurisation
+                    d'infrastructures Linux, Windows et cloud privé.</p>
+            </section>
 
-        <section>
-            <h3>EXPÉRIENCE PROFESSIONNELLE</h3>
-
-            <div class="experience">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">INGÉNIEUR SYSTÈMES SOL - ARIANE 6</div>
-                        <div class="company-location">GTD Sistemas de Informacion | Les Mureaux</div>
+            <section class="section-card">
+                <h3><i class="fas fa-microchip"></i> Expertise technique</h3>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Middleware & Serveurs d'Applications</h4>
+                        <ul>
+                            <li>Déploiement avancé : Tomcat, Apache, PHP-FPM, WebSphere, Nginx, WebLogic</li>
+                            <li>Messagerie & Streaming : RabbitMQ, Kafka</li>
+                            <li>Authentification & IAM : Keycloak, LDAP, Active Directory, CAS</li>
+                        </ul>
                     </div>
-                    <div class="date">06/2025 - présent</div>
+                    <div class="skill-category">
+                        <h4>Cloud & Conteneurisation</h4>
+                        <ul>
+                            <li>Orchestration : Docker, Kubernetes, Proxmox</li>
+                            <li>Virtualisation : OpenStack, VMware, VSphere</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>DevOps & Automatisation</h4>
+                        <ul>
+                            <li>CI/CD : Ansible, Git, Rundeck</li>
+                            <li>Scripting : Python, Bash, PowerShell</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Monitoring & Observabilité</h4>
+                        <ul>
+                            <li>Stack ELK : Elasticsearch, Logstash, Kibana, Metricbeat, Filebeat</li>
+                            <li>Supervision : Zabbix, Grafana, Cacti</li>
+                            <li>Ordonnancement : VTOM, Cron</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Sécurité & Infrastructure</h4>
+                        <ul>
+                            <li>Sécurisation SSL/TLS et gestion des certificats</li>
+                            <li>Pare-feu : Firewalld, IPtables</li>
+                            <li>Haute disponibilité : Heartbeat, Pacemaker, Nginx, HAProxy</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Développement</h4>
+                        <ul>
+                            <li>Langages : Java (SE, J2EE), Python, C#, Ruby, Android</li>
+                            <li>Systèmes embarqués : Microchip, Freescale, OS Yocto</li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="job-description">Maintien en condition opérationnelle des systèmes sol Ariane 6 sur sites
-                    français et allemands, avec support technique direct pendant les campagnes de vol.</p>
-                <div class="achievements">
-                    <h5>Réalisations clés :</h5>
+            </section>
+
+            <section class="section-card">
+                <h3><i class="fas fa-briefcase"></i> Expérience professionnelle</h3>
+                <div class="experience-list">
+                    <div class="experience featured">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Ingénieur Systèmes Sol — Ariane 6</div>
+                                <div class="company-location">GTD Sistemas de Informacion · Les Mureaux</div>
+                            </div>
+                            <div class="date">06/2025 — présent</div>
+                        </div>
+                        <p class="job-description">Maintien en condition opérationnelle des systèmes sol Ariane 6 sur
+                            sites français et allemands, avec support technique direct pendant les campagnes de vol.</p>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>Pilotage des prestataires de maintenance</strong> avec coordination des
+                                    interventions et amélioration continue des procédures</li>
+                                <li><strong>Gestion des incidents via Jira</strong> couvrant OS CentOS, applicatif,
+                                    matériel et sécurité</li>
+                                <li><strong>Intégration et mise à jour système sous CentOS</strong> avec clés bootables,
+                                    post-scripts et vérification des services Docker</li>
+                                <li><strong>Automatisation de la maintenance</strong> via scripts Ansible et Shell</li>
+                                <li><strong>Supervision ELK et Cacti</strong> des environnements de production</li>
+                                <li><strong>Support RCR en conditions réelles de vol</strong> avec intervention en temps
+                                    contraint</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Ingénieur de Production N3 — Référent Middleware & Applicatif
+                                </div>
+                                <div class="company-location">Orange OBS · Paris</div>
+                            </div>
+                            <div class="date">09/2021 — 05/2025</div>
+                        </div>
+                        <p class="job-description">Supervision de 200+ applications critiques pour le ministère avec
+                            support N3 et déploiements automatisés.</p>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>Support niveau 3</strong> applicatif, middleware, OS, sécurité et réseau via
+                                    easyVista</li>
+                                <li><strong>Déploiements automatisés</strong> via Ansible/Rundeck sur environnements
+                                    Windows et Linux</li>
+                                <li><strong>Sécurisation middleware</strong> : SSL/TLS, certificats, IAM Keycloak +
+                                    SSO/LDAP/AD</li>
+                                <li><strong>Supervision ELK</strong> avec politiques de rétention des logs</li>
+                                <li><strong>Astreintes 24/7</strong> pour garantir le SLA des services critiques</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Intégrateur Système</div>
+                                <div class="company-location">IDEMIA · Osny</div>
+                            </div>
+                            <div class="date">07/2017 — 08/2021</div>
+                        </div>
+                        <p class="job-description">Intégration et qualification des solutions biométriques MBIS pour des
+                            projets internationaux des Ministères de l'Intérieur.</p>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>Authentification Java</strong> pour système AFIS avec API LawTrust</li>
+                                <li><strong>Déploiement automatisé</strong> de 25+ applications via Ansible sur OpenStack
+                                </li>
+                                <li><strong>Haute disponibilité</strong> des services AFIS critiques</li>
+                                <li><strong>Journalisation centralisée</strong> avec Rsyslog, Logstash et Graylog</li>
+                                <li><strong>Qualification MEVA</strong> pour le gouvernement français via TestLink</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Ingénieur de Support — Aéroport Charles de Gaulle</div>
+                                <div class="company-location">AKKA Technologies · Roissy-en-France</div>
+                            </div>
+                            <div class="date">01/2017 — 06/2017</div>
+                        </div>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>Maintenance du système TBE</strong> de tri bagages sur terminaux E, F, G
+                                    (HP-UX)</li>
+                                <li><strong>Checklists serveurs</strong> pour garantir la continuité de service</li>
+                                <li><strong>Analyse logs et base Oracle</strong> pour résolution d'incidents</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Consultant Développeur Ruby</div>
+                                <div class="company-location">AKKA Technologies · Noisy-le-Grand</div>
+                            </div>
+                            <div class="date">07/2016 — 12/2016</div>
+                        </div>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>IHM de test Ruby</strong> pour le contrôle de l'offre RER (client RATP)</li>
+                                <li><strong>Vérifications fonctionnelles et techniques</strong> avec rapports HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Consultant Développeur</div>
+                                <div class="company-location">AKKA Technologies · Valence</div>
+                            </div>
+                            <div class="date">01/2016 — 06/2016</div>
+                        </div>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>Tests automatisés</strong> pour terminaux de paiement Ingenico</li>
+                                <li><strong>Application Android</strong> avec serveur HTTP embarqué (NanoHttpd)</li>
+                                <li><strong>Protocole PCL</strong> via Bluetooth avec résultats JSON</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Intégrateur Système</div>
+                                <div class="company-location">CPT Engineering · Sousse</div>
+                            </div>
+                            <div class="date">09/2012 — 06/2014</div>
+                        </div>
+                        <div class="achievements">
+                            <h5>Réalisations clés</h5>
+                            <ul>
+                                <li><strong>Supervision embarquée</strong> pour réseaux électriques et éoliennes (Java)
+                                </li>
+                                <li><strong>Reverse engineering C vers Java</strong> pour disjoncteurs intelligents</li>
+                                <li><strong>Protocoles IEC 61850</strong> sur microcontrôleurs Microchip</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                <div class="education-item">
+                    <div class="education-title">Master 2 — Systèmes Embarqués et Communicants</div>
+                    <div class="education-details">
+                        <div class="institution-location">UTBM, ENSISA · Mulhouse</div>
+                        <div class="date">2014 — 2015</div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">Master 2 — Pilotage des Systèmes Industriels</div>
+                    <div class="education-details">
+                        <div class="institution-location">École Supérieure Sciences et Technologie · Hammam Sousse</div>
+                        <div class="date">2010 — 2012</div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-title">Licence Appliquée — Informatique et Électronique</div>
+                    <div class="education-details">
+                        <div class="institution-location">École Supérieure Sciences et Technologie · Hammam Sousse</div>
+                        <div class="date">2007 — 2010</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certification-item">
+                    <div class="certification-details">
+                        <div class="certification-title">Linux Professional Institute Certification (LPIC-1)</div>
+                        <div class="certification-status">En cours</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h3><i class="fas fa-language"></i> Langues</h3>
+                <div class="language-item">
+                    <span class="language-tag"><i class="fas fa-flag"></i> Français — C2</span>
+                    <span class="language-tag"><i class="fas fa-flag"></i> Anglais — C1</span>
+                    <span class="language-tag"><i class="fas fa-flag"></i> Arabe — C2</span>
+                    <span class="language-tag"><i class="fas fa-flag"></i> Italien — A1</span>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h3><i class="fas fa-star"></i> Qualités professionnelles</h3>
+                <div class="quality-item">
                     <ul>
-                        <li><strong>Pilotage des prestataires de maintenance</strong> avec coordination des interventions
-                            et amélioration continue des procédures opérationnelles</li>
-                        <li><strong>Gestion des incidents critiques via Jira</strong> couvrant OS CentOS, applicatif,
-                            matériel et sécurité</li>
-                        <li><strong>Intégration et mise à jour système sous CentOS</strong> avec génération de clés
-                            bootables, exécution de post-scripts et vérification des services Docker</li>
-                        <li><strong>Automatisation de la maintenance</strong> via scripts Ansible et Shell</li>
-                        <li><strong>Supervision des environnements de production</strong> avec ELK et Cacti</li>
-                        <li><strong>Support RCR système et applicatif en conditions réelles de vol</strong> avec
-                            intervention en temps contraint</li>
+                        <li>Expertise en résolution de problèmes complexes</li>
+                        <li>Leadership collaboratif et communication efficace</li>
+                        <li>Innovation et apprentissage continu</li>
+                        <li>Autonomie et persévérance sous pression</li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <div class="experience">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">INTÉGRATEUR SYSTÈME</div>
-                        <div class="company-location">IDEMIA | Osny</div>
-                    </div>
-                    <div class="date">01/2019 - 08/2021</div>
-                </div>
-                <p class="job-description">Intégration et qualification des solutions biométriques (MBIS) pour des
-                    projets internationaux des Ministères de l'Intérieur.</p>
-                <div class="achievements">
-                    <h5>Réalisations clés :</h5>
-                    <ul>
-                        <li><strong>Développement d'un système d'authentification sécurisé</strong> basé sur Java pour un
-                            système AFIS utilisant un dispositif de reconnaissance d'empreintes digitales</li>
-                        <li><strong>Automatisation du déploiement</strong> de 25+ applications système avec Ansible dans un
-                            OpenStack environnement pour le projet BKA</li>
-                        <li><strong>Configuration et test de haute disponibilité</strong> des services AFIS critiques,
-                            garantissant un excellent uptime</li>
-                        <li><strong>Mise en place d'une solution de journalisation centralisée</strong> avec Rsyslog, Logstash
-                            et Graylog, améliorant considérablement la détection d'incidents</li>
-                        <li><strong>Qualification complète</strong> du projet MEVA pour le gouvernement français avec une
-                            excellente couverture des tests</li>
-                    </ul>
+            <div class="download-section">
+                <h3><i class="fas fa-file-download"></i> Télécharger ce CV</h3>
+                <p>Formats disponibles pour vos échanges avec recruteurs et clients</p>
+                <div class="download-buttons">
+                    <a href="cv_brini_hamdi.pdf" class="download-button" download>
+                        <i class="fas fa-file-pdf"></i> Format PDF
+                    </a>
+                    <a href="cv_brini_hamdi.docx" class="download-button" download>
+                        <i class="fas fa-file-word"></i> Format Word
+                    </a>
                 </div>
             </div>
+        </main>
 
-            <div class="experience">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">DÉVELOPPEUR & INTÉGRATEUR</div>
-                        <div class="company-location">AKKA Technologies, Client IDEMIA | Osny</div>
-                    </div>
-                    <div class="date">07/2017 - 12/2019</div>
-                </div>
-                <div class="achievements">
-                    <h5>Réalisations clés :</h5>
-                    <ul>
-                        <li><strong>Développement d'une application web RESTful J2EE</strong> (Maven, framework Jersey)
-                            pour simuler des scénarios d'échec et gérer leur traitement dans une application Android</li>
-                        <li><strong>Création de l'application Java BatchScanner</strong> pour scanner des fichiers
-                            biométriques, traitant efficacement plus de 10 000 fichiers par jour</li>
-                        <li><strong>Intégration des workflows biométriques</strong> dans le système MBIS pour le projet
-                            Sud-Africain, optimisant significativement le temps de traitement</li>
-                    </ul>
-                </div>
-            </div>
+        <footer>
+            <p><strong>Brini Hamdi</strong> · Ingénieur Systèmes Senior · Disponible pour missions en portage salarial ou
+                freelance</p>
+        </footer>
+    </div>
+</body>
 
-            <div class="experience">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">INGÉNIEUR SUPPORT - AÉROPORT DE CHARLES DE GAULLE</div>
-                        <div class="company-location">AKKA Technologies, Client Siemens | Roissy-en-France</div>
-                    </div>
-                    <div class="date">01/2017 - 06/2017</div>
-                </div>
-                <div class="achievements">
-                    <h5>Réalisations clés :</h5>
-                    <ul>
-                        <li><strong>Maintenance et support</strong> du système critique de tri de bagages TBE</li>
-                        <li><strong>Réduction importante des incidents</strong> grâce à l'exécution proactive de checklists sur
-                            les serveurs TBE</li>
-                        <li><strong>Analyse et résolution des problèmes</strong> via l'analyse des logs et de la base de
-                            données Oracle</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">CONSULTANT DÉVELOPPEUR RUBY</div>
-                        <div class="company-location">AKKA Technologies, Client RATP | Noisy-le-Grand</div>
-                    </div>
-                    <div class="date">07/2016 - 12/2016</div>
-                </div>
-                <div class="achievements">
-                    <h5>Réalisations clés :</h5>
-                    <ul>
-                        <li><strong>Développement et amélioration d'une IHM de test</strong> en Ruby pour le contrôle de
-                            l'offre RER</li>
-                        <li><strong>Implémentation de nouveaux types de vérifications</strong> fonctionnelles et techniques,
-                            augmentant significativement la couverture des tests</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">DÉVELOPPEUR & INTÉGRATEUR SYSTÈME</div>
-                        <div class="company-location">CPT Engineering | Sousse</div>
-                    </div>
-                    <div class="date">03/2012 - 07/2014</div>
-                </div>
-                <div class="achievements">
-                    <h5>Réalisations clés :</h5>
-                    <ul>
-                        <li><strong>Développement de logiciels de supervision</strong> pour des systèmes embarqués (réseaux
-                            électriques, éoliennes)
+</html>

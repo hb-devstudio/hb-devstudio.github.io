@@ -4,53 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirection</title>
+    <meta name="theme-color" content="#0c1e3a">
+    <title>Brini Hamdi — CV</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Facultatif : Styles pour le message de redirection */
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .redirect-page {
             min-height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
         }
 
-        .redirect-message {
+        .redirect-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
             text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 420px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .redirect-card h1 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .redirect-card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .redirect-links {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .redirect-links a {
+            padding: 0.6rem 1.2rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: var(--transition);
+        }
+
+        .redirect-links .primary {
+            background: linear-gradient(135deg, var(--accent), #0284c7);
+            color: var(--white);
+        }
+
+        .redirect-links .secondary {
+            background: var(--surface-alt);
+            border: 1px solid var(--border);
+            color: var(--primary);
+        }
+
+        .redirect-links a:hover {
+            transform: translateY(-1px);
         }
     </style>
 </head>
 
 <body>
-    <div class="redirect-message">
-        <p>Si vous n'êtes pas redirigé automatiquement, veuillez cliquer sur le lien ci-dessous :</p>
-        <a id="redirect-link" href="#"></a>
+    <div class="redirect-page">
+        <div class="redirect-card">
+            <h1>Brini Hamdi</h1>
+            <p>Redirection vers la version de votre CV…</p>
+            <div class="redirect-links">
+                <a id="redirect-link" class="primary" href="#">Continuer</a>
+                <a class="secondary" href="index_fr.html">FR</a>
+                <a class="secondary" href="index_en.html">EN</a>
+            </div>
+        </div>
     </div>
 
     <script>
-        const userLang = navigator.language || navigator.userLanguage; // Obtient la langue de l'utilisateur
+        const userLang = navigator.language || navigator.userLanguage;
         const redirectLink = document.getElementById('redirect-link');
+        const target = userLang.startsWith('fr') ? 'index_fr.html' : 'index_en.html';
 
-        if (userLang.startsWith('fr')) {
-            window.location.href = 'index_fr.html'; // Redirige vers le français
-            redirectLink.href = 'index_fr.html';
-            redirectLink.textContent = 'Voir la version française';
-        } else {
-            window.location.href = 'index_en.html'; // Redirige vers l'anglais
-            redirectLink.href = 'index_en.html';
-            redirectLink.textContent = 'See the English version';
-        }
-
-        // Facultatif : Attendre un peu avant la redirection (pour les effets visuels)
-        // setTimeout(function() {
-        //   window.location.href = (userLang.startsWith('fr') ? 'index_fr.html' : 'index_en.html');
-        // }, 1000); // 1 seconde
+        window.location.replace(target);
+        redirectLink.href = target;
+        redirectLink.textContent = userLang.startsWith('fr') ? 'Voir le CV' : 'View CV';
     </script>
 </body>
 
