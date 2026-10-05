@@ -494,6 +494,31 @@ h3 i {
     flex-wrap: wrap;
 }
 
+.experience-meta {
+    flex: 1 1 220px;
+    min-width: 0;
+}
+
+.experience-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.55rem;
+    flex-shrink: 0;
+}
+
+.company-logo {
+    width: 120px;
+    height: 44px;
+    object-fit: contain;
+    object-position: right center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: var(--shadow-sm);
+}
+
 .job-title {
     font-weight: 700;
     color: var(--primary);
@@ -518,6 +543,21 @@ h3 i {
     font-weight: 600;
     font-style: normal;
     white-space: nowrap;
+}
+
+.achievement-group {
+    margin-bottom: 0.85rem;
+}
+
+.achievement-group:last-child {
+    margin-bottom: 0;
+}
+
+.achievement-group h6 {
+    color: var(--primary-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
 }
 
 .job-description {
@@ -791,7 +831,14 @@ footer strong {
 
     .experience-header {
         flex-direction: column;
-        gap: 0.35rem;
+        gap: 0.6rem;
+    }
+
+    .experience-aside {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .date {
